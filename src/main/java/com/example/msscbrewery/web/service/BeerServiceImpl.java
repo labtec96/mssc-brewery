@@ -1,6 +1,7 @@
 package com.example.msscbrewery.web.service;
 
 import com.example.msscbrewery.web.model.BeerDto;
+import com.example.msscbrewery.web.model.BeerStyleEnum;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
@@ -14,7 +15,7 @@ public class BeerServiceImpl implements BeerService {
     public BeerDto getBeerById(UUID beerId) {
         return BeerDto.builder().id(UUID.randomUUID())
                 .beerName("Galaxy")
-                .beerStyle("IPA")
+                .beerStyle(BeerStyleEnum.ALE)
                 .build();
         //todo impl
     }
