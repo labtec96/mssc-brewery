@@ -16,6 +16,7 @@ public class BeerServiceImpl implements BeerService {
                 .beerName("Galaxy")
                 .beerStyle("IPA")
                 .build();
+        //todo impl
     }
 
     @Override
@@ -23,6 +24,7 @@ public class BeerServiceImpl implements BeerService {
         return BeerDto.builder()
                 .id(UUID.randomUUID())
                 .build();
+        //todo impl
     }
 
     @Override
@@ -32,6 +34,6 @@ public class BeerServiceImpl implements BeerService {
 
     @Override
     public void deleteById(UUID beerId) {
-
+        //todo impl
     }
 }
